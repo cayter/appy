@@ -16,6 +16,7 @@
     "target": "esnext",
     "types": [
       "bun-types" // add Bun global
-    ]
+    ],
+    "verbatimModuleSyntax": true
   }
 }
