@@ -1,6 +1,7 @@
 import { getCli } from "./cli";
 import { getConfig } from "./config";
 import { getLogger } from "./logger";
+import { renderToString } from "react-dom/server";
 
 export async function getApp() {
 	const config = getConfig(process.env);
@@ -11,5 +12,6 @@ export async function getApp() {
 		cli,
 		config,
 		logger,
+		renderToString,
 	};
 }
