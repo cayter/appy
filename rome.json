@@ -1,0 +1,26 @@
+{
+	"formatter": {
+		"enabled": true,
+		"ignore": ["node_modules/"]
+	},
+	"linter": {
+		"enabled": true,
+		"ignore": ["node_modules/"],
+		"rules": {
+			"correctness": {
+				"noUnusedVariables": "warn"
+			},
+			"style": {
+				"noNonNullAssertion": "off",
+				"useConst": "off"
+			},
+			"suspicious": {
+				"noEmptyInterface": "off",
+				"noPrototypeBuiltins": "off"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	}
+}
