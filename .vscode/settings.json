@@ -1,0 +1,27 @@
+{
+	"nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+	"editor.defaultFormatter": "rome.rome",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.rome": true
+	},
+	"files.watcherExclude": {
+		"**/.cache/*/**": true,
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/.hg/store/**": true,
+		"**/build/*/**": true,
+		"**/node_modules/*/**": true
+	},
+	"git.ignoreLimitWarning": true,
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true
+	},
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[markdown][yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

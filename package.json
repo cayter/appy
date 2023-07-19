@@ -1,0 +1,12 @@
+{
+  "name": "appy",
+  "module": "index.ts",
+  "exports": {
+    "bun": "./src/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.1.6"
+  },
+  "type": "module"
+}
