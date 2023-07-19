@@ -2,9 +2,9 @@ import { getCli } from "./cli";
 import { getConfig } from "./config";
 import { getLogger } from "./logger";
 
-export function getApp() {
+export async function getApp() {
 	const config = getConfig(process.env);
-	const logger = getLogger(config);
+	const logger = await getLogger(config);
 	const cli = getCli(config, logger);
 
 	return {

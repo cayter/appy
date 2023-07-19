@@ -1,7 +1,7 @@
 import { Config, Logger } from "..";
 import cac from "cac";
 
-export async function getCli(config: Config, logger: Logger) {
+export function getCli(config: Config, logger: Logger) {
 	const cli = cac("app").usage("[command] [options]");
 	cli.help();
 
